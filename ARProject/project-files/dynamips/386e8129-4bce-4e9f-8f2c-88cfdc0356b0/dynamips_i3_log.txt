@@ -1,0 +1,10 @@
+Jul 01 02:06:14.039 HYPERVISOR: Release 0.2.20-amd64/Linux (tag 2019022012)
+Jul 01 02:06:14.039 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 52551.
+Jul 01 02:06:14.049 HYPERVISOR: exec_cmd: hypervisor version 
+Jul 01 02:06:14.049 HYPERVISOR: exec_cmd: hypervisor working_dir /home/monteiro/GNS3/projects/ARProject/project-files/dynamips 
+Jul 01 02:06:14.049 GENERAL: working_dir=/home/monteiro/GNS3/projects/ARProject/project-files/dynamips
+Jul 01 02:06:14.050 HYPERVISOR: exec_cmd: ethsw create Ethernetswitch-3 
+Jul 01 02:39:56.116 HYPERVISOR: exec_cmd: ethsw delete Ethernetswitch-3 
+Jul 01 02:39:56.117 HYPERVISOR: exec_cmd: hypervisor stop 
+Jul 01 02:39:56.181 HYPERVISOR: Stopped.
+Jul 01 02:39:56.181 GENERAL: reset done.

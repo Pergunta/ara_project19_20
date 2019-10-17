@@ -1,0 +1,73 @@
+Jul 01 02:06:14.094 HYPERVISOR: Release 0.2.20-amd64/Linux (tag 2019022012)
+Jul 01 02:06:14.094 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 45631.
+Jul 01 02:06:14.104 HYPERVISOR: exec_cmd: hypervisor version 
+Jul 01 02:06:14.104 HYPERVISOR: exec_cmd: hypervisor working_dir /home/monteiro/GNS3/projects/ARProject/project-files/dynamips 
+Jul 01 02:06:14.104 GENERAL: working_dir=/home/monteiro/GNS3/projects/ARProject/project-files/dynamips
+Jul 01 02:06:14.104 HYPERVISOR: exec_cmd: hypervisor working_dir /home/monteiro/GNS3/projects/ARProject/project-files/dynamips/dbd5957b-fc61-4d82-a559-f2b17d44c3ae 
+Jul 01 02:06:14.105 GENERAL: working_dir=/home/monteiro/GNS3/projects/ARProject/project-files/dynamips/dbd5957b-fc61-4d82-a559-f2b17d44c3ae
+Jul 01 02:06:14.105 HYPERVISOR: exec_cmd: vm create ISP1 7 c7200 
+Jul 01 02:06:14.105 VM: VM ISP1 created.
+Jul 01 02:06:14.105 HYPERVISOR: exec_cmd: vm set_con_tcp_port ISP1 5010 
+Jul 01 02:06:14.105 HYPERVISOR: exec_cmd: c7200 get_mac_addr ISP1 
+Jul 01 02:06:14.105 HYPERVISOR: exec_cmd: vm get_status ISP1 
+Jul 01 02:06:14.106 HYPERVISOR: exec_cmd: vm slot_add_binding ISP1 0 0 C7200-IO-FE 
+Jul 01 02:06:14.106 HYPERVISOR: exec_cmd: vm set_disk0 ISP1 0 
+Jul 01 02:06:14.106 HYPERVISOR: exec_cmd: vm get_status ISP1 
+Jul 01 02:06:14.106 HYPERVISOR: exec_cmd: vm set_idle_pc ISP1 0x60608040 
+Jul 01 02:06:14.107 HYPERVISOR: exec_cmd: vm set_ios ISP1 /home/monteiro/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jul 01 02:06:14.107 HYPERVISOR: exec_cmd: c7200 set_mac_addr ISP1 ca07.40ca.0000 
+Jul 01 02:06:14.107 HYPERVISOR: exec_cmd: vm set_nvram ISP1 512 
+Jul 01 02:06:14.107 HYPERVISOR: exec_cmd: vm set_ram ISP1 512 
+Jul 01 02:06:14.107 HYPERVISOR: exec_cmd: vm get_status ISP1 
+Jul 01 02:06:14.108 HYPERVISOR: exec_cmd: vm slot_remove_binding ISP1 0 0 
+Jul 01 02:06:14.108 HYPERVISOR: exec_cmd: vm get_status ISP1 
+Jul 01 02:06:14.108 HYPERVISOR: exec_cmd: vm slot_add_binding ISP1 0 0 C7200-IO-2FE 
+Jul 01 02:06:14.108 HYPERVISOR: exec_cmd: vm get_status ISP1 
+Jul 01 02:06:14.108 HYPERVISOR: exec_cmd: vm slot_add_binding ISP1 1 0 PA-2FE-TX 
+Jul 01 02:16:07.512 HYPERVISOR: exec_cmd: nio create_udp udp-6c146903-e35f-45b1-bd8d-84adda144d36 10010 127.0.0.1 10011 
+Jul 01 02:16:07.724 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP1 1 1 udp-6c146903-e35f-45b1-bd8d-84adda144d36 
+Jul 01 02:16:07.725 HYPERVISOR: exec_cmd: vm get_status ISP1 
+Jul 01 02:16:33.870 HYPERVISOR: exec_cmd: nio create_udp udp-1db26770-1c29-4669-a1bc-7ef15032878a 10014 127.0.0.1 10015 
+Jul 01 02:16:33.871 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP1 1 0 udp-1db26770-1c29-4669-a1bc-7ef15032878a 
+Jul 01 02:16:33.871 HYPERVISOR: exec_cmd: vm get_status ISP1 
+Jul 01 02:16:40.139 HYPERVISOR: exec_cmd: vm get_status ISP1 
+Jul 01 02:16:40.140 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding ISP1 1 0 
+Jul 01 02:16:40.140 HYPERVISOR: exec_cmd: nio delete udp-1db26770-1c29-4669-a1bc-7ef15032878a 
+Jul 01 02:17:25.562 HYPERVISOR: exec_cmd: nio create_udp udp-c2a0103c-d4de-41e8-b588-ef364d8ec439 10014 127.0.0.1 10015 
+Jul 01 02:17:25.563 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP1 1 0 udp-c2a0103c-d4de-41e8-b588-ef364d8ec439 
+Jul 01 02:17:25.563 HYPERVISOR: exec_cmd: vm get_status ISP1 
+Jul 01 02:18:25.064 HYPERVISOR: exec_cmd: vm set_ios ISP1 /home/monteiro/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jul 01 02:35:26.893 HYPERVISOR: exec_cmd: vm set_ios ISP1 /home/monteiro/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jul 01 02:46:24.980 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Jul 01 02:46:24.980 VM: VM Ghost created.
+Jul 01 02:46:24.984 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/monteiro/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jul 01 02:46:24.986 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jul 01 02:46:24.989 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/monteiro/GNS3/projects/ARProject/project-files/dynamips/c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jul 01 02:46:24.991 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Jul 01 02:46:24.993 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jul 01 02:46:24.995 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Jul 01 02:46:24.996 HYPERVISOR: exec_cmd: vm start Ghost 
+Jul 01 02:46:25.458 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jul 01 02:46:25.459 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jul 01 02:46:25.627 VM: VM Ghost shutdown.
+Jul 01 02:46:25.628 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Jul 01 02:46:25.630 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jul 01 02:46:25.630 VM: VM Ghost destroyed.
+Jul 01 02:46:25.633 HYPERVISOR: exec_cmd: vm set_ghost_status ISP1 2 
+Jul 01 02:46:25.634 HYPERVISOR: exec_cmd: vm set_ghost_file ISP1 /home/monteiro/GNS3/projects/ARProject/project-files/dynamips/c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jul 01 02:46:25.635 HYPERVISOR: exec_cmd: vm get_status ISP1 
+Jul 01 02:46:25.636 HYPERVISOR: exec_cmd: vm set_config ISP1 configs/i7_startup-config.cfg 
+Jul 01 02:46:25.637 HYPERVISOR: exec_cmd: vm start ISP1 
+Jul 01 02:46:55.888 HYPERVISOR: exec_cmd: vm extract_config ISP1 
+Jul 01 02:47:25.889 HYPERVISOR: exec_cmd: vm extract_config ISP1 
+Jul 01 03:40:56.415 HYPERVISOR: exec_cmd: vm get_status ISP1 
+Jul 01 03:40:56.417 HYPERVISOR: exec_cmd: vm stop ISP1 
+Jul 01 03:40:56.521 VM: VM ISP1 shutdown.
+Jul 01 03:40:56.521 HYPERVISOR: exec_cmd: vm extract_config ISP1 
+Jul 01 03:40:58.396 HYPERVISOR: exec_cmd: vm get_status ISP1 
+Jul 01 03:40:58.396 HYPERVISOR: exec_cmd: vm extract_config ISP1 
+Jul 01 03:40:58.441 HYPERVISOR: exec_cmd: vm delete ISP1 
+Jul 01 03:40:58.441 VM: VM ISP1 destroyed.
+Jul 01 03:40:58.441 HYPERVISOR: exec_cmd: hypervisor stop 
+Jul 01 03:40:58.517 HYPERVISOR: Stopped.
+Jul 01 03:40:58.517 GENERAL: reset done.

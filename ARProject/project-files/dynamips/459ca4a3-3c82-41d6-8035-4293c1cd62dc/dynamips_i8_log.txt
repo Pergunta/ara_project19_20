@@ -1,0 +1,30 @@
+Jun 24 22:26:02.883 HYPERVISOR: Release 0.2.20-amd64/Linux (tag 2019022012)
+Jun 24 22:26:02.883 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 39191.
+Jun 24 22:26:02.894 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 24 22:26:02.894 HYPERVISOR: exec_cmd: hypervisor working_dir /home/monteiro/GNS3/projects/ARProject/project-files/dynamips 
+Jun 24 22:26:02.894 GENERAL: working_dir=/home/monteiro/GNS3/projects/ARProject/project-files/dynamips
+Jun 24 22:26:02.895 HYPERVISOR: exec_cmd: hypervisor working_dir /home/monteiro/GNS3/projects/ARProject/project-files/dynamips/f46b133d-f30a-4b80-9642-905923323131 
+Jun 24 22:26:02.895 GENERAL: working_dir=/home/monteiro/GNS3/projects/ARProject/project-files/dynamips/f46b133d-f30a-4b80-9642-905923323131
+Jun 24 22:26:02.895 HYPERVISOR: exec_cmd: vm create ESW4 4 c3725 
+Jun 24 22:26:02.895 VM: VM ESW4 created.
+Jun 24 22:26:02.896 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW4 5007 
+Jun 24 22:26:02.897 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW4 
+Jun 24 22:26:02.897 HYPERVISOR: exec_cmd: vm set_disk0 ESW4 1 
+Jun 24 22:26:02.898 HYPERVISOR: exec_cmd: vm get_status ESW4 
+Jun 24 22:26:02.898 HYPERVISOR: exec_cmd: vm set_idle_pc ESW4 0x60a68e70 
+Jun 24 22:26:02.899 HYPERVISOR: exec_cmd: vm set_ios ESW4 /home/monteiro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 24 22:26:02.900 HYPERVISOR: exec_cmd: c3725 set_mac_addr ESW4 c204.3e4d.0000 
+Jun 24 22:26:02.900 HYPERVISOR: exec_cmd: vm set_nvram ESW4 256 
+Jun 24 22:26:02.901 HYPERVISOR: exec_cmd: vm get_status ESW4 
+Jun 24 22:26:02.901 HYPERVISOR: exec_cmd: vm slot_add_binding ESW4 1 0 NM-16ESW 
+Jun 24 22:26:02.901 HYPERVISOR: exec_cmd: vm get_status ESW4 
+Jun 24 22:26:02.902 HYPERVISOR: exec_cmd: vm slot_add_binding ESW4 2 0 NM-16ESW 
+Jun 24 22:27:13.158 HYPERVISOR: exec_cmd: vm get_status ESW4 
+Jun 24 22:27:13.159 HYPERVISOR: exec_cmd: vm extract_config ESW4 
+Jun 24 22:27:13.165 HYPERVISOR: exec_cmd: vm get_status ESW4 
+Jun 24 22:27:13.166 HYPERVISOR: exec_cmd: vm extract_config ESW4 
+Jun 24 22:27:13.167 HYPERVISOR: exec_cmd: vm delete ESW4 
+Jun 24 22:27:13.167 VM: VM ESW4 destroyed.
+Jun 24 22:27:13.168 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 24 22:27:13.468 HYPERVISOR: Stopped.
+Jun 24 22:27:13.469 GENERAL: reset done.
